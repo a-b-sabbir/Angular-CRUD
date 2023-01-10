@@ -1,0 +1,20 @@
+<div class="col-md-8 offset-md-3">
+<h3>Add Employee</h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input name="firstName" [(ngModel)]="emp.firstName" type="text" class="form-control" id="firstName" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">First Name</label>
+            <input name="lastName" [(ngModel)]="emp.lastName" type="text" class="form-control" id="lastName" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="emailId" class="form-label">Email</label>
+            <input name="emailId" [(ngModel)]="emp.emailId" type="text" class="form-control" id="emailId" aria-describedby="emailHelp">
+          </div>
+        
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
